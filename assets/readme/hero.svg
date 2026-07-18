@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1200" height="400" viewBox="0 0 1200 400"
      role="img" aria-labelledby="title desc">
-  <title id="title">Kimi Code Skill for Codex</title>
-  <desc id="desc">An unofficial open-source bridge that delegates design-aware coding tasks from Codex to a local Kimi Code CLI session.</desc>
+  <title id="title">Kimi</title>
+  <desc id="desc">An unofficial open-source Agent Skill for delegating design-aware coding tasks to a local Kimi Code CLI session.</desc>
 
   <defs>
     <linearGradient id="blue-line" x1="0" y1="0" x2="1" y2="0">
@@ -27,8 +27,8 @@
     </g>
 
     <text x="158" y="80" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="760" letter-spacing="1.2">KIMI</text>
-    <text x="158" y="112" fill="#1783FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" letter-spacing="2.8">CODEX SKILL</text>
-    <text x="60" y="166" fill="#8993A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.7">UNOFFICIAL · OPEN SOURCE · LOCAL AGENT DELEGATION</text>
+    <text x="158" y="112" fill="#1783FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" letter-spacing="2.8">AGENT SKILL</text>
+    <text x="60" y="166" fill="#8993A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.7">UNOFFICIAL · OPEN SOURCE · AGENT-AGNOSTIC</text>
 
     <text x="60" y="224" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="650">Design-aware delegation</text>
     <text x="60" y="266" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="650">to your local Kimi Code CLI.</text>

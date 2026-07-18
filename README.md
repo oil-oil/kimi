@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="Kimi Code Skill for Codex — design-aware delegation to a local Kimi Code CLI">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Kimi — design-aware Agent delegation to a local Kimi Code CLI">
 </p>
 
 <p align="center">
-  <strong>Delegate focused coding and design tasks from Codex to your local Kimi Code CLI.</strong><br>
-  <sub>让 Codex 稳定地调用本地 Kimi Code：捕获进度、续接会话，并返回紧凑的 Markdown 结果。</sub>
+  <strong>Delegate focused coding and design tasks from any Agent to your local Kimi Code CLI.</strong><br>
+  <sub>让任意 Agent 稳定地调用本地 Kimi Code：捕获进度、续接会话，并返回紧凑的 Markdown 结果。</sub>
 </p>
 
 <p align="center">
@@ -16,12 +16,12 @@
 
 ## What this is
 
-An unofficial community [Codex Skill](./SKILL.md) that wraps the local [`kimi`](https://github.com/MoonshotAI/kimi-code) command for predictable, non-interactive delegation.
+An unofficial, host-agnostic [Agent Skill](./SKILL.md) that wraps the local [`kimi`](https://github.com/MoonshotAI/kimi-code) command for predictable, non-interactive delegation. Any Agent that can load `SKILL.md` and execute a shell command can use it.
 
-Kimi is especially useful when a task benefits from strong UI/UX judgment, visual direction, design-system thinking, or polished frontend implementation. The wrapper adds the orchestration layer that a calling agent needs: focused context, JSONL capture, compact progress, resumable sessions, and a Markdown handoff.
+Kimi is especially useful when a task benefits from strong UI/UX judgment, visual direction, design-system thinking, or polished frontend implementation. The wrapper adds the orchestration layer that a calling Agent needs: focused context, JSONL capture, compact progress, resumable sessions, and a Markdown handoff.
 
 ```text
-Codex request → ask_kimi.sh → Kimi stream-json → result.md + session_id → Codex review
+Agent request → ask_kimi.sh → Kimi stream-json → result.md + session_id → Agent review
 ```
 
 ## Proof, not ceremony
@@ -48,22 +48,23 @@ The caller reads the result, reviews the workspace changes, and can resume the s
 - macOS or Linux with Bash 3.2+
 - [Kimi Code CLI](https://github.com/MoonshotAI/kimi-code) installed and authenticated
 - [`jq`](https://jqlang.org/) available on `PATH`
-- Codex with user Skills enabled
+- An Agent that can load `SKILL.md` and run local shell commands
 
-Clone the repository, then link it into Codex's user Skill directory:
+Clone the repository, then link it into the Skill directory used by your Agent:
 
 ```bash
-git clone https://github.com/oil-oil/kimi-codex-skill.git
-cd kimi-codex-skill
-mkdir -p ~/.codex/skills
-ln -s "$PWD" ~/.codex/skills/kimi
+git clone https://github.com/oil-oil/kimi.git
+cd kimi
+export AGENT_SKILLS_DIR="/path/to/your/agent/skills"
+mkdir -p "$AGENT_SKILLS_DIR"
+ln -s "$PWD" "$AGENT_SKILLS_DIR/kimi"
 ```
 
-If `~/.codex/skills/kimi` already exists, update or remove that installation intentionally before linking this repository.
+If a `kimi` Skill already exists in that directory, update or remove it intentionally before creating the link. Hosts may also load this repository's `SKILL.md` directly without a symlink.
 
 ## First task
 
-Invoke the Skill from Codex:
+Invoke the Skill from your Agent:
 
 ```text
 Use $kimi to inspect this repository and implement the requested change.
@@ -72,7 +73,7 @@ Use $kimi to inspect this repository and implement the requested change.
 Or verify the wrapper directly:
 
 ```bash
-~/.codex/skills/kimi/scripts/ask_kimi.sh \
+./scripts/ask_kimi.sh \
   "Explain the active request path" \
   --workspace "/path/to/repository" \
   --file "src/main.ts"
@@ -81,7 +82,7 @@ Or verify the wrapper directly:
 Resume the returned session:
 
 ```bash
-~/.codex/skills/kimi/scripts/ask_kimi.sh \
+./scripts/ask_kimi.sh \
   "Now add the missing regression test" \
   --workspace "/path/to/repository" \
   --session "session_..."
@@ -124,7 +125,7 @@ Kimi's non-interactive prompt mode may edit files or run commands under its auto
 ```text
 .
 ├── SKILL.md                 # Triggering metadata and agent workflow
-├── agents/openai.yaml       # Codex UI metadata
+├── agents/openai.yaml       # Optional metadata for OpenAI hosts
 ├── scripts/ask_kimi.sh      # Deterministic Kimi Code wrapper
 └── assets/readme/hero.svg   # GitHub-safe project hero
 ```
@@ -141,7 +142,7 @@ For behavioral changes, test a harmless new session, a resumed session, and one 
 
 ## Contributing
 
-Issues and focused pull requests are welcome. Keep the Skill concise, preserve macOS Bash 3.2 compatibility, and verify behavior against the currently installed `kimi --help` rather than assuming Codex CLI flags also exist in Kimi Code.
+Issues and focused pull requests are welcome. Keep the Skill concise, preserve macOS Bash 3.2 compatibility, and verify behavior against the currently installed `kimi --help` rather than assuming another Agent CLI uses the same flags.
 
 ## License
 
