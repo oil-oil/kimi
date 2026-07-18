@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="400" viewBox="0 0 1200 400"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Kimi Code Skill for Codex</title>
+  <desc id="desc">An unofficial open-source bridge that delegates design-aware coding tasks from Codex to a local Kimi Code CLI session.</desc>
+
+  <defs>
+    <linearGradient id="blue-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1783FF"/>
+      <stop offset="1" stop-color="#1783FF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="terminal-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="400" rx="28" fill="#050608"/>
+  <rect width="1200" height="400" rx="28" fill="url(#terminal-grid)"/>
+  <path d="M0 399.5H1200" stroke="#20242C"/>
+
+  <g id="identity">
+    <rect x="58" y="48" width="76" height="76" rx="20" fill="#0B0D11" stroke="#2A303A"/>
+    <!-- Official K-only dark mark from MoonshotAI/Branding-Guide. -->
+    <g transform="translate(66 55) scale(2.5)">
+      <path d="M21.7202 0.939941C22.9502 0.939941 23.9502 1.93994 23.9502 3.16994C23.9502 4.39994 22.9502 5.39994 21.7202 5.39994H19.7502C19.6002 5.39994 19.4902 5.27994 19.4902 5.13994V3.16994C19.4902 1.93994 20.4902 0.939941 21.7202 0.939941Z" fill="#1783FF"/>
+      <path d="M9.39 13.9501L17.82 5.59012C17.98 5.43012 17.89 5.12012 17.68 5.12012H13.14C13.14 5.12012 13.04 5.14012 13 5.18012L3.92 14.1901C3.78 14.3301 3.57 14.2101 3.57 13.9801V5.39012C3.57 5.24012 3.47 5.12012 3.35 5.12012H0.219999C0.0999993 5.12012 0 5.24012 0 5.39012V23.9201C0 24.0701 0.0999993 24.1901 0.219999 24.1901H3.35C3.47 24.1901 3.57 24.0701 3.57 23.9201V20.1401C3.57 20.0601 3.6 19.9801 3.65 19.9301L6.47 17.1401C6.54 17.0701 6.63 17.0601 6.71 17.1101L14.24 22.6501C15.47 23.4801 16.85 23.9901 18.25 24.1401C18.37 24.1501 18.48 24.0301 18.48 23.8701V20.3101C18.48 20.1701 18.4 20.0601 18.29 20.0501C17.47 19.9201 16.66 19.6001 15.94 19.1101L9.42 14.3901C9.28 14.3001 9.27 14.0701 9.39 13.9501Z" fill="#F7F9FC"/>
+    </g>
+
+    <text x="158" y="80" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="760" letter-spacing="1.2">KIMI</text>
+    <text x="158" y="112" fill="#1783FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" letter-spacing="2.8">CODEX SKILL</text>
+    <text x="60" y="166" fill="#8993A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.7">UNOFFICIAL · OPEN SOURCE · LOCAL AGENT DELEGATION</text>
+
+    <text x="60" y="224" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="650">Design-aware delegation</text>
+    <text x="60" y="266" fill="#F7F9FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="650">to your local Kimi Code CLI.</text>
+    <text x="60" y="310" fill="#A5ADBA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">One focused task in. A resumable session and compact handoff out.</text>
+    <rect x="60" y="344" width="520" height="2" fill="url(#blue-line)"/>
+    <text x="60" y="374" fill="#6F7887" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.2">JSONL CAPTURE  ·  SESSION RESUME  ·  MARKDOWN RESULT</text>
+  </g>
+
+  <g id="terminal-proof" transform="translate(690 48)">
+    <rect width="450" height="304" rx="22" fill="#0A0C10" stroke="#2A303A"/>
+    <path d="M0 52H450" stroke="#20242C"/>
+    <circle cx="24" cy="26" r="5" fill="#3A404A"/>
+    <circle cx="42" cy="26" r="5" fill="#3A404A"/>
+    <circle cx="60" cy="26" r="5" fill="#1783FF"/>
+    <text x="82" y="31" fill="#7E8795" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">ask_kimi.sh</text>
+
+    <text x="24" y="88" fill="#1783FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">$</text>
+    <text x="44" y="88" fill="#E9EDF3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">use $kimi</text>
+    <rect x="159" y="74" width="8" height="18" rx="2" fill="#1783FF"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">
+      <text x="24" y="128" fill="#707A89">task</text>
+      <path d="M76 123H124" stroke="#3B4553"/>
+      <path d="M118 118L124 123L118 128" fill="none" stroke="#3B4553"/>
+      <text x="140" y="128" fill="#CED4DE">polish the interface</text>
+
+      <text x="24" y="166" fill="#707A89">stream</text>
+      <path d="M88 161H124" stroke="#3B4553"/>
+      <path d="M118 156L124 161L118 166" fill="none" stroke="#3B4553"/>
+      <text x="140" y="166" fill="#CED4DE">tool: Read · Edit</text>
+
+      <text x="24" y="204" fill="#707A89">session</text>
+      <path d="M96 199H124" stroke="#3B4553"/>
+      <path d="M118 194L124 199L118 204" fill="none" stroke="#3B4553"/>
+      <text x="140" y="204" fill="#CED4DE">session_7f…</text>
+      <text x="356" y="204" fill="#1783FF">↻</text>
+
+      <text x="24" y="242" fill="#707A89">result</text>
+      <path d="M88 237H124" stroke="#3B4553"/>
+      <path d="M118 232L124 237L118 242" fill="none" stroke="#3B4553"/>
+      <text x="140" y="242" fill="#CED4DE">handoff.md</text>
+      <text x="356" y="242" fill="#57D38C">✓</text>
+    </g>
+
+    <rect x="24" y="268" width="402" height="1" fill="#20242C"/>
+    <circle cx="32" cy="286" r="4" fill="#57D38C"/>
+    <text x="46" y="291" fill="#7E8795" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">local Kimi Code · compact progress · resumable</text>
+  </g>
+</svg>

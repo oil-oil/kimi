@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kimi Code"
+  short_description: "Design-strong coding with local Kimi Code CLI"
+  default_prompt: "Use $kimi to inspect the repository, apply strong design judgment, and implement the requested change."
