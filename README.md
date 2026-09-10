@@ -16,7 +16,7 @@
 
 ## What this is
 
-An unofficial, host-agnostic [Agent Skill](./SKILL.md) that wraps the local [`kimi`](https://github.com/MoonshotAI/kimi-code) command for predictable, non-interactive delegation. Any Agent that can load `SKILL.md` and execute a shell command can use it.
+将设计、前端实现、代码探索、评审及媒体分析交给本地命令行 Agent，支持持续会话。
 
 Kimi is especially useful when a task benefits from strong UI/UX judgment, visual direction, design-system thinking, or polished frontend implementation. The wrapper adds the orchestration layer that a calling Agent needs: focused context, JSONL capture, compact progress, resumable sessions, and a Markdown handoff.
 
@@ -149,3 +149,25 @@ Issues and focused pull requests are welcome. Keep the Skill concise, preserve m
 The Skill and wrapper are released under the [MIT License](./LICENSE).
 
 Kimi and the Kimi logo are trademarks or brand assets of Moonshot AI. This project is unofficial, is not affiliated with or endorsed by Moonshot AI, and uses the official mark only to identify Kimi Code compatibility. See [NOTICE](./NOTICE); the logo is not covered by this repository's MIT license.
+
+## 配置、依赖与使用边界
+
+需要可用的 Kimi CLI、Python 与官方认证；复用已有登录，不在聊天收集 API Key。具体图像输入能力按当前 CLI 检查。
+
+仅传任务需要的文件与图像；外部模型可能计费，输出仍需按用户要求验证，不把模型自述当成验收。
+
+使用示例：
+
+```text
+用 Kimi 评审这个页面，先给出基于现有组件的改进意见。
+```
+
+## GitHub 安装
+
+把 [仓库地址](https://github.com/oil-oil/kimi) 交给 Agent，要求按 README 安装；也可运行：
+
+```bash
+npx skills add oil-oil/kimi
+```
+
+安装后由宿主重新加载 Skill。

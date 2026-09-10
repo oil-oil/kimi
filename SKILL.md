@@ -1,6 +1,6 @@
 ---
 name: kimi
-description: Delegate design-heavy UI/UX work, frontend implementation, coding, repository exploration, review, and media-aware analysis to the local Kimi Code CLI through a bundled non-interactive wrapper. Kimi is a design-strong Agent suited to visual direction, design systems, interface critique, and frontend polish. It can inspect local images and videos but cannot generate or edit image assets. Invoke only when the user explicitly asks to use Kimi or Kimi Code, such as "用 Kimi 做", "让 Kimi 执行", or "ask Kimi to...". Use for new or resumed Kimi sessions, local model selection, priority file or media hints, analysis, and implementation work in trusted workspaces; do not use it for image generation.
+description: "将 UI/UX 设计、前端实现、代码探索、评审和本地媒体分析委托给 Kimi CLI，支持新建或继续会话。仅在用户明确要求 Kimi 或选择本 Skill 时调用；不因普通编码或设计请求自动委托，不用于图片生成与编辑。"
 ---
 
 # Kimi
