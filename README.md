@@ -16,7 +16,7 @@
 
 ## What this is
 
-An unofficial, host-agnostic [Agent Skill](./SKILL.md) that wraps the local [`kimi`](https://github.com/MoonshotAI/kimi-code) command for predictable, non-interactive delegation. Any Agent that can load `SKILL.md` and execute a shell command can use it.
+将设计、前端实现、代码探索、评审及媒体分析交给本地命令行 Agent，支持持续会话。
 
 Kimi is especially useful when a task benefits from strong UI/UX judgment, visual direction, design-system thinking, or polished frontend implementation. The wrapper adds the orchestration layer that a calling Agent needs: focused context, JSONL capture, compact progress, resumable sessions, and a Markdown handoff.
 
